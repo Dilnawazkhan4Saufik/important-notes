@@ -1,1 +1,6 @@
 ./gradlew clean && ./gradlew assemblelmsaRelease //creating apk using command 
+
+
+//remove node_modules/Pods and install yarn and pods using command
+rm -rf node_modules && cd ios && rm -rf Pods && rm -rf Podfile.lock && cd .. && yarn && cd ios && 
+pod install && cd .. 
