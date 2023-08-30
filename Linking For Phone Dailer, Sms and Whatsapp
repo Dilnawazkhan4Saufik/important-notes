@@ -1,0 +1,44 @@
+for ios(add in info.plist file):
+    <key>LSApplicationQueriesSchemes</key>
+	<array>
+  		<string>tel</string>
+		<string>whatsapp</string>
+	</array>
+
+
+
+
+Examples below:-
+
+const openDialer = async () => {
+    let number = '';
+    if (Platform.OS === 'ios') {
+      number = `telprompt:${phoneNo}`;
+    } else {
+      number = `tel:${phoneNo}`;
+    }
+    await Linking.openURL(number);
+  };
+
+  const openSMSApp = async () => {
+    const dummyMessage = 'this is a sms from Cell-DEX app';
+    await Linking.openURL(
+      `sms:${phoneNo}?body=${encodeURIComponent(dummyMessage)}`
+    );
+  };
+
+  const openWhatsAppChat = async () => {
+    /*
+    below line is used for predefined Message to the recipient
+    const url = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    
+    */
+    const url = `whatsapp://send?phone=${phoneNo}`;
+    try {
+      await Linking.openURL(url);
+    } catch (error) {
+      //in error case Whatsapp is not installed show user pop-up
+      console.log('ERROR ', error);
+    }
+    
+  };
