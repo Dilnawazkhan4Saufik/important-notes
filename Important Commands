@@ -1,0 +1,2 @@
+--->Get SHA1
+cd android && ./gradlew signinReport 
