@@ -1,2 +1,6 @@
 --->Get SHA1
 cd android && ./gradlew signinReport 
+
+
+--->React Native Cli stopped reloading or reflecting changes on device
+rm -rf .git/index.lock
