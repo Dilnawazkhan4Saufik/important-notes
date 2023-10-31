@@ -1,0 +1,26 @@
+ <WebView
+              showsVerticalScrollIndicator={false}
+              onLoadStart={() => dispatch(loading(true))}
+              onLoadEnd={() => dispatch(loading(false))}
+              source={{ html: htmlContent }}
+              style={{
+                flex: 1,
+                borderRadius: 10,
+              }}
+              // textInteractionEnabled={false}
+              menuItems={[
+                { label: 'Highlight', key: 'highlight' },
+                { label: 'Strikethrough', key: 'strikethrough' },
+              ]}
+              onCustomMenuSelection={(webViewEvent) => {
+                const { label, key, selectedText } = webViewEvent.nativeEvent;
+                console.log(
+                  'Custom Menu Item Clicked: ',
+                  label,
+                  ' :: ',
+                  key,
+                  ' :: ',
+                  selectedText
+                );
+              }}
+            />
