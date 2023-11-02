@@ -1,6 +1,6 @@
 remove unnecessary jdk using command line
 
 
-cd /Library/Java/JavaMachines
+cd /Library/Java/JavaVirtualMachines
 ls -lt
 sudo rm -rf "jdkName"
