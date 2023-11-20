@@ -4,3 +4,10 @@ cd android && ./gradlew signinReport
 
 --->React Native Cli stopped reloading or reflecting changes on device
 rm -rf .git/index.lock
+
+
+---->To open xcode move to ios and run 
+  => open LMSApp.xcworkspace
+---->To open derieved data 
+  => shift+command+g 
+  => /Users/dilnawazkhan/Library/Developer/Xcode/
