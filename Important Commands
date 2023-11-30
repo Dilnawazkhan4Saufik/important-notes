@@ -11,3 +11,9 @@ rm -rf .git/index.lock
 ---->To open derieved data 
   => shift+command+g 
   => /Users/dilnawazkhan/Library/Developer/Xcode/
+
+
+
+------>MacBook Command:
+clear derieved data
+cmd + shift + G
