@@ -1,0 +1,2 @@
+to open xcode move to ios and run => open LMSApp.xcworkspace
+to open derieved data => shift+command+g => /Users/dilnawazkhan/Library/Developer/Xcode/

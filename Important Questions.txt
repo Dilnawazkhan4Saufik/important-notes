@@ -1,0 +1,20 @@
+1. What is dif. b/w class and functional comp?
+2. setState sync or async?
+3. how to get latest value of setState: hint callback
+4. what gets executed first in class comp.
+5. HOCs?
+6. Callback functions
+7. Redux, ContextAPI
+8. Ref
+9. forward ref?
+10. Timers type(settime, interval)
+11. which components are considered as HOC?
+12. FlatList and ScrollView dif?
+13. onItemLayout purpose?
+14. SectionList and Flatlist dif
+15. Traditional DOM vs Virtual DOM
+16. Props and States which one is mutable & immutable
+17. onPress best way of calling function?
+18. Pure Comp. and Normal Comp. dif?
+19. for push notification how will we setup for ios
+20. offline storage(offline-first user experiences)?
